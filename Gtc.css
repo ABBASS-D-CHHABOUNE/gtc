@@ -1,0 +1,2010 @@
+/* Google font - Nunito san serif */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+
+html 
+{
+   
+    background-color: aliceblue;
+    scroll-behavior: smooth;
+    
+}
+
+body 
+{
+    font-family: "Nunito Sans", serif;
+    margin: 0;
+    padding: 0%;
+    
+}
+
+li 
+{
+    list-style: none;
+
+}
+
+a 
+{
+    text-decoration: none;
+}
+
+button 
+{
+    border: none;
+}
+
+
+#Whatsapp 
+{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+ 
+}
+
+
+
+#scrollToTop {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  display: none;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: opacity 0.3s ease;
+}
+
+/* Media screens  */
+
+
+/* Extra Small Devices (Mobile Phones) */
+@media (max-width: 480px) {
+    /* Your styles here */
+    /* hidden disktop from mobile Version */
+    .Services-containers 
+  {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+  }
+
+
+  #Hero-section-desktop 
+  {
+   display: none; 
+  }
+
+
+    #Hero-Section 
+    {
+     height: 90vh;
+     background:rgba(0, 0, 0, 0.603) url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTc4bHIweWM0ZzVnbW13N3VhaGlraW1sZjAycW1lZTdnMml4c2pnNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l2JHPr17vflgwJbag/giphy.gif") ;
+     background-repeat: repeat;
+     background-position: center center;
+     background-size: cover;
+     background-blend-mode: darken;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: column;
+
+    
+    }
+
+    .Hero-container 
+    {
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      gap: 0;
+      padding: 1.1rem;
+      
+      
+    }
+
+    .hero-content 
+    {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      padding: 3px;
+
+      gap: 0;
+      
+
+    }
+    .hero-content h1 
+    {
+      text-align: center;
+      width: 100%;
+      font-size: 35px;
+      color: gold;
+      text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px rgb(0, 0, 0), 0 0 40px rgb(0, 0, 0);
+      animation:  glow 1s infinite alternate ease-in;
+    
+    }
+
+
+    @keyframes glow {
+      0% {
+          transform: scale(1);
+      }
+      100% {
+          transform: scale(1.05);
+      }
+  }
+
+ 
+
+    .hero-content h3 
+    {
+      text-align: center;
+      width: 90%;
+      font-size: 20px;
+      background-color: white;
+      padding: 10px;
+      border-radius: 50px;
+      color: crimson;
+      
+    }
+    .hero-content p 
+    {
+      text-align: center;
+      color:white;
+    }
+    /* Cta */
+
+    .call-to-actions 
+    {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: column wrap;
+      gap: 5px;
+    }
+
+    .call-to-actions span 
+    {
+      background-color: crimson;
+      color: white;
+      padding: 5px 20px;
+      border-radius: 10px 0px 10px 0px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+
+    #Explore-Services 
+    {
+      width: 200px;
+      height: 8vh;
+      font-size: 15px;
+      border: none;
+      background-color: gold;
+      color: black;
+      font-weight: 600;
+      border-radius: 10px 0px 10px 0px ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+
+    #Contact-us 
+    {
+      width: 200px;
+      height: 8vh;
+      font-size: 15px;
+      border: none;
+      background-color: rgb(0, 0, 0);
+      color: gold;
+      outline: 1px solid white;
+      font-weight: 600;
+      border-radius: 10px 0px 10px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+
+
+
+
+
+
+
+    /* start services section */
+
+
+    .Services-containers 
+  {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+  }
+
+  .Services-containers .services 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    
+    
+  }
+  
+
+  .Services-containers .services .services-content 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 10px 20px;
+    
+  }
+  .Services-containers .services .services-content img 
+  {
+    width: 70px;
+  }
+
+  .Services-containers .services .services-content h3 , p 
+  {
+    text-align: center;
+    font-size: 13px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* emailsection */
+
+
+  #contact-us 
+  {
+    scroll-behavior: smooth;
+    height: 60vh;
+    background-color: rgb(255, 255, 255);
+    padding: 15px 20px;
+  }
+
+  .contact-container 
+  {
+
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+    
+    
+  }
+
+  .con-us-content 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 0px;
+  }
+
+  .con-us-content h1 
+  {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1.1px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+  } 
+
+  form 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+  }
+  form input 
+  {
+    padding: 15px 20px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.719);
+    color: white;
+  }
+  form input::placeholder 
+  {
+    color: wheat;
+  }
+  #Send-mail 
+  {
+    padding: 15px 10px;
+    background-color: rgb(255, 242, 0);
+    outline-color: black;
+    
+   
+  }
+
+  /* end email section */
+
+
+
+
+
+
+
+   /* start footer */
+
+   #the-footer 
+   {
+     background-color: black;
+     
+   }
+   .footer-container 
+   {
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-template-rows: repeat(2,1fr);
+     padding: 2rem 2rem;
+     justify-content: center;
+     align-items: start;
+     
+   }
+   /* heading */
+   .heading 
+   {
+     position: relative;
+     
+     width: 100%;
+ 
+   }
+   .heading h3 
+   {
+     color: aliceblue;
+     font-size: 24px;
+   }
+   .heading h3::before 
+   {
+     content: '';
+     position: absolute;
+     background-color: gold;
+     width: 15px;
+     height: 1px;
+     bottom: 20px;
+   }
+   .foot-container 
+   {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: column wrap;
+     gap: 5px;
+   }
+ 
+   .heading-links 
+   {
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+     flex-flow: column nowrap;
+     gap: 15px;
+     width: 100%;
+   }
+   .heading-links a 
+   {
+   
+   position: relative;
+   text-decoration: none;
+   color: white;
+     
+   }
+ 
+   .heading-links  a::before
+   {
+   
+     content: "";
+     position: absolute;
+     left: 0;
+     bottom: -3px; /* Adjust the distance from text */
+     width: 100%;
+     height: 2px;
+     background-color: gold;
+     transform: scaleX(0);
+     border-radius: 40px;
+     transform-origin: right;
+     transition: transform 0.3s ease-out;
+     
+   }
+ 
+   a:hover::before {
+     transform: scaleX(1);
+     transform-origin: left;
+   }
+ 
+ 
+ 
+ 
+    
+ 
+   /* End footer */
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+  
+
+  
+  
+  /* Small Devices (Tablets) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    /* Your styles here */
+
+
+
+
+    .Services-containers 
+  {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+  }
+
+
+  #Hero-section-desktop 
+  {
+   display: none; 
+  }
+
+
+    #Hero-Section 
+    {
+     height: 90vh;
+     background:rgba(0, 0, 0, 0.603) url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTc4bHIweWM0ZzVnbW13N3VhaGlraW1sZjAycW1lZTdnMml4c2pnNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l2JHPr17vflgwJbag/giphy.gif") ;
+     background-repeat: repeat;
+     background-position: center center;
+     background-size: cover;
+     background-blend-mode: darken;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: column;
+
+    
+    }
+
+    .Hero-container 
+    {
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      gap: 0;
+      padding: 1.1rem;
+      
+      
+    }
+
+    .hero-content 
+    {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      padding: 3px;
+
+      gap: 0;
+      
+
+    }
+    .hero-content h1 
+    {
+      text-align: center;
+      width: 100%;
+      font-size: 35px;
+      color: gold;
+      text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px rgb(0, 0, 0), 0 0 40px rgb(0, 0, 0);
+      animation:  glow 1s infinite alternate ease-in;
+    
+    }
+
+
+    @keyframes glow {
+      0% {
+          transform: scale(1);
+      }
+      100% {
+          transform: scale(1.05);
+      }
+  }
+
+ 
+
+    .hero-content h3 
+    {
+      text-align: center;
+      width: 90%;
+      font-size: 20px;
+      background-color: white;
+      padding: 10px;
+      border-radius: 50px;
+      color: crimson;
+      
+    }
+    .hero-content p 
+    {
+      text-align: center;
+      color:white;
+    }
+    /* Cta */
+
+    .call-to-actions 
+    {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: column wrap;
+      gap: 5px;
+    }
+
+    .call-to-actions span 
+    {
+      background-color: crimson;
+      color: white;
+      padding: 5px 20px;
+      border-radius: 10px 0px 10px 0px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+
+    #Explore-Services 
+    {
+      width: 200px;
+      height: 8vh;
+      font-size: 15px;
+      border: none;
+      background-color: gold;
+      color: black;
+      font-weight: 600;
+      border-radius: 10px 0px 10px 0px ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+
+    #Contact-us 
+    {
+      width: 200px;
+      height: 8vh;
+      font-size: 15px;
+      border: none;
+      background-color: rgb(0, 0, 0);
+      color: gold;
+      outline: 1px solid white;
+      font-weight: 600;
+      border-radius: 10px 0px 10px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+
+
+
+
+
+
+    /* start services section */
+
+
+    .Services-containers 
+  {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+  }
+
+  .Services-containers .services 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    
+  }
+  
+
+  .Services-containers .services .services-content 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 10px 20px;
+    
+  }
+  .Services-containers .services .services-content img 
+  {
+    width: 70px;
+  }
+
+  .Services-containers .services .services-content h3 , p 
+  {
+    text-align: center;
+    font-size: 13px;
+  }
+
+
+  /* cards section */
+
+
+
+
+
+.cards-container 
+{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5rem;
+    gap: 5px;
+
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    transition-duration: 1s;
+    overflow: visible;
+  }
+  .card img {
+    
+    width: 50%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.377);
+    transform: scale(1.2); /* Slightly lower zoom for better usability */
+    transform-origin: center;
+  
+  }
+
+
+
+
+  
+  .the-cards-container {
+    padding: 0px 16px;
+    height: 8vh;
+    background-color: black;
+    width: 100%;
+  }
+  /* end card sections */
+
+
+
+
+
+
+  /* start footer */
+
+  #the-footer 
+  {
+    background-color: black;
+    
+  }
+  .footer-container 
+  {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding: 10rem 5rem;
+    justify-content: center;
+    align-items: start;
+    gap: 15px;
+    
+  }
+  /* heading */
+  .heading 
+  {
+    position: relative;
+    
+    width: 100%;
+
+  }
+  .heading h3 
+  {
+    color: aliceblue;
+    font-size: 24px;
+  }
+  .heading h3::before 
+  {
+    content: '';
+    position: absolute;
+    background-color: gold;
+    width: 15px;
+    height: 1px;
+    bottom: 20px;
+  }
+  .foot-container 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 5px;
+  }
+
+  .heading-links 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    gap: 15px;
+    width: 100%;
+  }
+  .heading-links a 
+  {
+  
+  position: relative;
+  text-decoration: none;
+  color: white;
+    
+  }
+
+  .heading-links  a::before
+  {
+  
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Adjust the distance from text */
+    width: 100%;
+    height: 2px;
+    background-color: gold;
+    transform: scaleX(0);
+    border-radius: 40px;
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+    
+  }
+
+  a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+
+  /* End footer */
+
+   
+    
+  }
+  
+  /* Medium Devices (Small Laptops) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Your styles here */
+    
+
+
+    #Hero-Section 
+    {
+     height: 90vh;
+     background:rgba(0, 0, 0, 0.603) url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTc4bHIweWM0ZzVnbW13N3VhaGlraW1sZjAycW1lZTdnMml4c2pnNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l2JHPr17vflgwJbag/giphy.gif") ;
+     background-repeat: repeat;
+     background-position: center center;
+     background-size: cover;
+     background-blend-mode: darken;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: column;
+
+    
+    }
+
+    .Hero-container 
+    {
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      gap: 0;
+      padding: 1.1rem;
+      
+      
+    }
+
+    .hero-content 
+    {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      padding: 3px;
+
+      gap: 0;
+      
+
+    }
+    .hero-content h1 
+    {
+      text-align: center;
+      width: 100%;
+      font-size: 35px;
+      color: gold;
+      text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px rgb(0, 0, 0), 0 0 40px rgb(0, 0, 0);
+      animation:  glow 1s infinite alternate ease-in;
+    
+    }
+
+
+    @keyframes glow {
+      0% {
+          transform: scale(1);
+      }
+      100% {
+          transform: scale(1.05);
+      }
+  }
+
+ 
+
+    .hero-content h3 
+    {
+      text-align: center;
+      width: 90%;
+      font-size: 20px;
+      background-color: white;
+      padding: 10px;
+      border-radius: 50px;
+      color: crimson;
+      
+    }
+    .hero-content p 
+    {
+      text-align: center;
+      color:white;
+    }
+    /* Cta */
+
+    .call-to-actions 
+    {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: column wrap;
+      gap: 5px;
+    }
+
+    .call-to-actions span 
+    {
+      background-color: crimson;
+      color: white;
+      padding: 5px 20px;
+      border-radius: 10px 0px 10px 0px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+
+    #Explore-Services 
+    {
+      width: 200px;
+      height: 8vh;
+      font-size: 15px;
+      border: none;
+      background-color: gold;
+      color: black;
+      font-weight: 600;
+      border-radius: 10px 0px 10px 0px ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+
+    #Contact-us 
+    {
+      width: 200px;
+      height: 8vh;
+      font-size: 15px;
+      border: none;
+      background-color: rgb(0, 0, 0);
+      color: gold;
+      outline: 1px solid white;
+      font-weight: 600;
+      border-radius: 10px 0px 10px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+
+
+
+
+
+    /* Start Services Section */
+
+
+
+  #Services 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: black;
+    
+    
+  }
+  .parent-services 
+  {
+    padding: 1.2rem 6rem;
+    
+
+  }
+  .Services-containers 
+  {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+  }
+  .Services-containers .services 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+
+  .Services-containers .services .services-content 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 10px 30px;
+  }
+  .Services-containers .services .services-content img 
+  {
+    width: 100px;
+  }
+
+  .Services-containers .services .services-content h3 , p 
+  {
+    text-align: center;
+    
+
+  }
+
+  /* cards section */
+
+
+
+
+
+.cards-container 
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 5rem;
+    gap: 20px;
+
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+  .card img {
+    
+    width: 100%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.377);
+  }
+  
+  .the-cards-container {
+    padding: 0px 16px;
+    height: 8vh;
+    background-color: black;
+    width: 100%;
+  }
+  /* end card sections */
+
+
+
+  /* start footer */
+
+  #the-footer 
+  {
+    background-color: black;
+    
+  }
+  .footer-container 
+  {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    padding: 4rem 5rem;
+    justify-content: center;
+    align-items: start;
+    
+  }
+  /* heading */
+  .heading 
+  {
+    position: relative;
+    
+    width: 100%;
+
+  }
+  .heading h3 
+  {
+    color: aliceblue;
+    font-size: 24px;
+  }
+  .heading h3::before 
+  {
+    content: '';
+    position: absolute;
+    background-color: gold;
+    width: 15px;
+    height: 1px;
+    bottom: 20px;
+  }
+  .foot-container 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 5px;
+  }
+
+  .heading-links 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    gap: 15px;
+    width: 100%;
+  }
+  .heading-links a 
+  {
+  
+  position: relative;
+  text-decoration: none;
+  color: white;
+    
+  }
+
+  .heading-links  a::before
+  {
+  
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Adjust the distance from text */
+    width: 100%;
+    height: 2px;
+    background-color: gold;
+    transform: scaleX(0);
+    border-radius: 40px;
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+    
+  }
+
+  a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+
+
+
+   
+
+  /* End footer */
+  }
+  
+  /* Large Devices (Desktops) */
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    /* Your styles here */
+    #Hero-Section 
+    {
+      display: none;
+    }
+    #Hero-Section 
+    {
+     height: 90vh;
+     background:rgba(0, 0, 0, 0.603) url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTc4bHIweWM0ZzVnbW13N3VhaGlraW1sZjAycW1lZTdnMml4c2pnNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l2JHPr17vflgwJbag/giphy.gif") ;
+     background-repeat: repeat;
+     background-position: center center;
+     background-size: cover;
+     background-blend-mode: darken;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: column;
+     
+
+    
+    }
+
+    .Hero-container 
+    {
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      gap: 0;
+      padding: 1.1rem;
+      
+      
+    }
+
+    .hero-content 
+    {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      padding: 3px;
+
+      gap: 10;
+      
+
+    }
+    .hero-content h1 
+    {
+      text-align: center;
+      width: 100%;
+      font-size: 35px;
+      color: gold;
+      text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px rgb(0, 0, 0), 0 0 40px rgb(0, 0, 0);
+      animation:  glow 1s infinite alternate ease-in;
+    
+    }
+
+
+    @keyframes glow {
+      0% {
+          transform: scale(1);
+      }
+      100% {
+          transform: scale(1.05);
+      }
+  }
+
+ 
+
+    .hero-content h3 
+    {
+      text-align: center;
+      width: 90%;
+      font-size: 20px;
+      background-color: white;
+      padding: 10px;
+      border-radius: 50px;
+      color: crimson;
+      
+    }
+    .hero-content p 
+    {
+      text-align: center;
+      color:white;
+    }
+    /* Cta */
+
+    .call-to-actions 
+    {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: column wrap;
+      gap: 5px;
+    }
+
+    .call-to-actions span 
+    {
+      background-color: crimson;
+      color: white;
+      padding: 5px 20px;
+      border-radius: 10px 0px 10px 0px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+
+    #Explore-Services 
+    {
+      width: 200px;
+      height: 8vh;
+      font-size: 15px;
+      border: none;
+      background-color: gold;
+      color: black;
+      font-weight: 600;
+      border-radius: 10px 0px 10px 0px ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+
+    #Contact-us 
+    {
+      width: 200px;
+      height: 8vh;
+      font-size: 15px;
+      border: none;
+      background-color: rgb(0, 0, 0);
+      color: gold;
+      outline: 1px solid white;
+      font-weight: 600;
+      border-radius: 10px 0px 10px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+
+
+
+    /* start footer */
+
+  #the-footer 
+  {
+    background-color: black;
+    
+  }
+  .footer-container 
+  {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    padding: 4rem 15rem;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    
+  }
+  /* heading */
+  .heading 
+  {
+    position: relative;
+    
+    width: 100%;
+
+  }
+  .heading h3 
+  {
+    color: aliceblue;
+    font-size: 24px;
+  }
+  .heading h3::before 
+  {
+    content: '';
+    position: absolute;
+    background-color: gold;
+    width: 15px;
+    height: 1px;
+    bottom: 20px;
+  }
+  .foot-container 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 10px;
+  }
+
+  .heading-links 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    gap: 15px;
+    width: 100%;
+  }
+  .heading-links a 
+  {
+  
+  position: relative;
+  text-decoration: none;
+  color: white;
+    
+  }
+
+  .heading-links  a::before
+  {
+  
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Adjust the distance from text */
+    width: 100%;
+    height: 2px;
+    background-color: gold;
+    transform: scaleX(0);
+    border-radius: 40px;
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+    
+  }
+
+  a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+
+
+  /* End footer */
+    
+  }
+  
+  /* Extra Large Devices (Large Desktops) */
+  @media (min-width: 1200px) {
+    /* Your styles here */
+
+
+    /* Start of the Hero Section */
+    #Hero-Section 
+    {
+      display: none;
+    }
+    #Hero-section-desktop 
+    {
+      height: 88vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: fill;
+      background: rgb(224,188,97);
+background: linear-gradient(337deg, rgba(224,188,97,1) 0%, rgba(255,226,0,1) 100%);
+
+      
+      
+    } 
+
+    .Hero-desktop-container 
+    {
+      padding: 1.2rem 6rem;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(1,1fr);
+      justify-content: center;
+      align-items: center;
+      height: 88vh;
+     
+    }
+
+    .Hero-desktop-container .animation-img 
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .Hero-desktop-container-content .content
+    {
+     
+      display: block;
+      
+    }
+
+    .Hero-desktop-container-content .content h1 
+    {
+      font-size: 40px;
+      width: 100%;
+    }
+    .Hero-desktop-container-content .content h4 
+    {
+      font-size: 25px;
+      font-weight: 700;
+    }
+    .Hero-desktop-container-content .content h5 
+    {
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .Hero-desktop-container-content .content-cta 
+    {
+      display: inline;
+      width: 100%;
+      
+    }
+
+    #Jetzt
+    {
+      padding: 20px 15px;
+      background-color: crimson;
+      color: white;
+      transition-duration: .5s;
+      cursor: pointer;
+      
+    }
+    
+    #Weitere 
+    {
+      border: none;
+
+      background-color: black;
+      color: rgb(255, 255, 255);
+      padding: 20px 30px;
+      cursor:all-scroll;
+     
+
+
+    }
+
+
+    /* The end of the hero section */
+
+
+
+
+  /* Start Services Section */
+
+
+
+  #Services 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+    
+  }
+  .parent-services 
+  {
+    padding: 1.2rem 6rem;
+    
+
+  }
+  .Services-containers 
+  {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+  }
+  .Services-containers .services 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+  .services 
+  {
+    opacity: 0;
+    animation: Fadinup 0.6s ease-out forwards;
+  }
+  @keyframes Fadinup {
+
+    from 
+    {
+      transform: translateY(50px);
+      opacity: 0;
+
+    }
+
+    to 
+    {
+      transform: translateY(0);
+      opacity: 1;
+
+    }
+    
+  }
+
+  .services:nth-child(1) { animation-delay:0.2s ;}
+  .services:nth-child(2) { animation-delay:0.4s ;} 
+  .services:nth-child(3) { animation-delay:0.6s ;} 
+  .services:nth-child(4) { animation-delay:0.8s ;} 
+
+  .Services-containers .services .services-content 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 10px 30px;
+    gap: 15px;
+  }
+  .Services-containers .services .services-content img 
+  {
+    width: 100px;
+  }
+
+  .Services-containers .services .services-content h3 , p 
+  {
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+
+
+
+/* cards section */
+
+
+
+
+
+.cards-container 
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 5rem;
+    gap: 30px;
+
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    transition-duration: 1s ;
+    animation: fadeInLeft 1s ease-out forwards;
+  }
+  .card img {
+    
+    width: 100%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.377);
+    transform: scale(1.1); /* Slightly lower zoom for better usability */
+    transform-origin: center;
+  }
+  
+  .the-cards-container {
+    padding: 0px 16px;
+    height: 8vh;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+  }
+     /* cards animation */
+     @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    .card {
+      opacity: 0; /* Start invisible */
+      animation: fadeInLeft 1s ease-out forwards;
+    }
+    /* endcards animation */
+  /* end card sections */
+
+
+
+  /* start Why us section */
+
+  #Whyus 
+  {
+    
+    overflow: hidden;
+    scroll-behavior: smooth;
+    background-color: aliceblue;
+  }
+
+  .Why-container
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    padding: 1.5rem 5rem;
+    gap: 10px;
+    
+
+  }
+
+  .Why-container:nth-child(2) 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row-reverse nowrap;
+    padding: 1.5rem 5rem;
+    gap: 10px;
+    opacity: 0; /* Start invisible */
+    animation: fadeInLeft 1s ease-out forwards;
+
+  }
+  .Why-container:nth-child(4) 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row-reverse nowrap;
+    padding: 1.5rem 5rem;
+    gap: 10px;
+    opacity: 0; /* Start invisible */
+    animation: fadeInLeft 3s ease-out forwards;
+
+  }
+  .Why-container .why-content 
+  {
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    flex-flow: column;
+    width: 50%;
+    gap: 15px;
+
+  }
+  .Why-container .why-content h1 
+  {
+    color: crimson;
+    font-size: 40px;
+  }
+
+  .Why-container .why-content h3 
+  {
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+  }
+  .Why-container .why-content p
+  {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-align: left;
+    width: 500px;
+    overflow: hidden;
+
+  }
+
+  .Whyus-cta 
+  {
+    background-color: black;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    border-radius: 4px;
+    color: gold;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    
+  }
+
+  .Whyus-cta:hover {
+    transform: scale(1.1); /* Slight zoom */
+    background-color: gold;
+    color: black;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.8); /* Glowing effect */
+}
+  .Why-container .why-media 
+  {
+    width: 50%;
+    text-align: center;
+    
+  }
+
+  .Why-container .why-media img 
+  {
+    width: 90%;
+  }
+
+  /* cards animation */
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  
+
+
+  /* End Why us Section */
+
+
+
+
+
+
+
+
+
+
+
+
+  /* emailsection */
+
+
+  #contact-us 
+  {
+    scroll-behavior: smooth;
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem  5rem;
+  }
+
+  .contact-container 
+  {
+
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 15px;
+
+    
+    
+  }
+
+  .con-us-content 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 0px;
+  }
+
+  .con-us-content h1 
+  {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1.1px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+  } 
+
+  form 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+  }
+  form input 
+  {
+    width: 50%;
+    height: 50px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.719);
+    color: white;
+    margin-left: 10px;
+  }
+  form input::placeholder 
+  {
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 15px;
+    margin-left: 10px;
+  
+  }
+  #Send-mail 
+  {
+    background-color: rgb(255, 242, 0);
+    height: 50px;
+    width: 100px;
+    
+   
+  }
+
+  /* end email section */
+
+  
+
+
+
+  /* start footer */
+
+  #the-footer 
+  {
+    background-color: black;
+    
+  }
+  .footer-container 
+  {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    padding: 4rem 15rem;
+    justify-content: center;
+    align-items: start;
+    
+  }
+  /* heading */
+  .heading 
+  {
+    position: relative;
+    
+    width: 100%;
+
+  }
+  .heading h3 
+  {
+    color: aliceblue;
+    font-size: 24px;
+  }
+  .heading h3::before 
+  {
+    content: '';
+    position: absolute;
+    background-color: gold;
+    width: 15px;
+    height: 1px;
+    bottom: 20px;
+  }
+  .foot-container 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 5px;
+  }
+
+  .heading-links 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    gap: 15px;
+    width: 100%;
+  }
+  .heading-links a 
+  {
+  
+  position: relative;
+  text-decoration: none;
+  color: white;
+    
+  }
+
+  .heading-links  a::before
+  {
+  
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Adjust the distance from text */
+    width: 100%;
+    height: 2px;
+    background-color: gold;
+    transform: scaleX(0);
+    border-radius: 40px;
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+    
+  }
+
+  a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+
+
+
+   
+
+  /* End footer */
+
+
+
+
+
+ }
+
+
+
+
+  /* copy section */
+
+
+  .copy {
+    text-align: center;
+    padding: 15px;
+    background-color: #222; /* Dark background */
+    color: #fff; /* White text */
+    font-size: 14px;
+}
+
+.copy h1 {
+    font-size: 16px;
+    font-weight: normal;
+}
+ /* copy section */
+
